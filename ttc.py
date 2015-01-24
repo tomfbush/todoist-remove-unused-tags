@@ -73,6 +73,8 @@ for x in labelList:
 
 TODO
 
-[ ] Create new dicts for the tokens for each request instead of using del on lingering project_id
-
+- Create new dicts for the tokens for each request instead of using del on lingering project_id
+- Proper documentation
+- Visual feedback of what is happening
+- Figure out why it didn't delete that last label one time...! 
 '''
