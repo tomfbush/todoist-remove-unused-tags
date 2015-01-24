@@ -77,4 +77,14 @@ TODO
 - Proper documentation
 - Visual feedback of what is happening
 - Figure out why it didn't delete that last label one time...! 
+
+THOUGHTS
+
+- Possible rewrite...
+	- to get the labels in use you need to get the unfinished tasks
+	- to get the unfinished tasks you need a project ID
+	- so I did have to get the project IDs
+	- however, not sure I needed to get the label IDs, just the label names from the incomplete tasks
+	- this is because actually, the /deleteLabel command requires the label names
+	- the lesson here is "read the syntax of the final, vital command first and work back"
 '''
