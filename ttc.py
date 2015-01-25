@@ -1,27 +1,26 @@
 # -*- coding: utf-8 -*-
 
-## Load prerequisites
-# For dealing with Todoist API
+# Load prerequisites
 import requests
-# For loading the token.txt file
 import os.path
 
-## Timesaving 
+# Timesaving 
+
 todoistURL = 'https://www.todoist.com/API'
 usedLabelIDs = []
 removeLabelIDs = []
 
-## This function saves time printing JSON nicely
+# This function saves time printing JSON nicely
 def pj(str):
    print(json.dumps(json.loads(str.content), indent=4))
    return
 
-## Set login parameters (old, insecure) and obtain token
+# Set login parameters (old, insecure) and obtain token
 file = open('token.txt', 'r')
 usertoken = file.read().strip()
 token = {'token': usertoken}
 
-## Get a list of projects and their details by API request and using token obtained above 
+# Get a list of projects and their details by API request and using token obtained above 
 print("Getting a list of projects...")
 projectList = requests.post(todoistURL+"/getProjects", params=token).json()
 
