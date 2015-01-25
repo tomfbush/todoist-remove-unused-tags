@@ -76,10 +76,6 @@ if "Y" in confirm:
 TODO
 
 - Create new dicts for the tokens for each request instead of using del on lingering project_id
-- Proper documentation
-
-THOUGHTS
-
 - Possible rewrite...
 	- to get the labels in use you need to get the unfinished tasks
 	- to get the unfinished tasks you need a project ID
