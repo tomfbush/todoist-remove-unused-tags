@@ -9,6 +9,7 @@ import os.path
 todoistURL = 'https://www.todoist.com/API'
 usedLabelIDs = []
 removeLabelIDs = []
+confirm = []
 
 # This function saves time printing JSON nicely
 def pj(str):
@@ -60,9 +61,9 @@ for label in usedLabelIDs:
 # Print list of labels to remove as a check
 for x in labelList:
     if labelList[x]['id'] in removeLabelIDs:
-        print labelList[x]['name']
+        print(labelList[x]['name'])
 
-confirm = raw_input("Press Y to remove the above: ")
+confirm = input("Press Y to remove the above: ")
 if "Y" in confirm:
     print("Removing unused label(s)...")
 
