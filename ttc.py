@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 # Load prerequisites
 import requests
@@ -59,23 +59,24 @@ for label in usedLabelIDs:
 # TODO: Add a check to see if there actually is anything to remove; if not, exit.
 
 # Print list of labels to remove as a check
+#for x in labelList:
+#    if labelList[x]['id'] in removeLabelIDs:
+#        print(labelList[x]['name'])
+
+#confirm = input("Press Y to remove the above: ")
+#if "Y" in confirm:
+print("Removing unused label(s)...")
+
+# Remove the remainders from Todoist
 for x in labelList:
-    if labelList[x]['id'] in removeLabelIDs:
-        print(labelList[x]['name'])
-
-confirm = input("Press Y to remove the above: ")
-if "Y" in confirm:
-    print("Removing unused label(s)...")
-
-    # Remove the remainders from Todoist
-    for x in labelList:
-        if labelList[x]['id'] in removeLabelIDs:
+	if labelList[x]['id'] in removeLabelIDs:
             token.update({'name' : labelList[x]['name']})
             requests.post(todoistURL+"/deleteLabel", params=token)
 '''
 
 TODO
 
+- input appeared to be broken when tested on Win 7
 - Create new dicts for the tokens for each request instead of using del on lingering project_id
 - Possible rewrite...
 	- to get the labels in use you need to get the unfinished tasks
