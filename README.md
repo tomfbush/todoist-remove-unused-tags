@@ -16,4 +16,4 @@ It should just work once you have done that.
 
 This is highly unlikely to do anything unexpected as the API commands to delete tasks etc. just don't appear in the code, but don't blame me if it does. Everything is done at your own risk.
 
-I may write this up on [my website](http://www.tombush.co.uk) at some point when the code is better.
+I may write this up on [my website](https://www.tombush.co.uk) at some point when the code is better.
