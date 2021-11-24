@@ -12,7 +12,7 @@ You need to add your Todoist API token to `token.txt`. Make sure there isn't any
 
 It should just work once you have done that.
 
-## Disclaimer
+## Disclaimer
 
 This is highly unlikely to do anything unexpected as the API commands to delete tasks etc. just don't appear in the code, but don't blame me if it does. Everything is done at your own risk.
 
